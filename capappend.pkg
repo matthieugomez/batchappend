@@ -1,0 +1,14 @@
+v 3
+
+d capappend. Append datasets with conflicting types
+d
+d Author: Matthieu Gomez
+d
+d
+d KW: capappend, append
+d
+d Requires: Stata version 11.2
+d
+d Distribution-Date: 20150330
+d
+f capappend.ado
