@@ -1,6 +1,9 @@
 program capappend
 syntax using/, *
 noi cap append using `"`using'"', `options'
+
+
+
 if _rc == 106{
 	foreach v of varlist *{
 		capture confirm numeric variable `v'
@@ -12,7 +15,7 @@ if _rc == 106{
 		}
 	}
 	preserve
-	use `"`using'"', clear
+	qui use `"`using'"', clear
 	foreach v of varlist *{
 		capture confirm numeric variable `v'
 		if _rc==0{
@@ -25,17 +28,17 @@ if _rc == 106{
 	local inter: list master_string & using_numeric
 	foreach v in `inter'{
 		local type1: type `v'
-		tostring `v', replace
+		qui tostring `v', replace
 		local type2: type `v'
 		noi display as text "(note: variable `v' was `type1' in using, now `type2' to accommodate master data value)" 
 	}
 	tempfile using2
-	save `"`using2'"', replace
+	qui save `"`using2'"', replace
 	restore
 	local inter: list master_numeric & using_string
 	foreach v in `inter'{
 		local type1: type `v'
-		tostring `v', replace
+		qui tostring `v', replace
 		local type2: type `v'
 		noi display as text "(note: variable `v' was `type1' in master, now `type2' to accommodate using data value)" 
 	}
