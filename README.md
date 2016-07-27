@@ -1,6 +1,6 @@
 ## description
 
-`batchappend.ado` solves the following problem. When appending a bunch of `.dta` created from `xls`, two variables may have the same name but differing types (string vs numerical). In this case, `append` throws an error. With the `force` option, `append` converts the string observations to missing values. Instead, the command `capappend` converts the numerical observations to strings.
+When appending a bunch of `.dta` created from `xls`, two variables may have the same name but differing types (string vs numerical). In this case, `append` throws an error. With the `force` option, `append` converts the string observations to missing values. Instead, the command `batchappend` converts the numerical observations to strings.
 
 ## installation
 
