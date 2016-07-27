@@ -1,7 +1,6 @@
 ## description
 
-
-The command `capappend`  handles variables with conflicting types by converting them to string. The issue with the base command `append` is that variables with conflicting types are converted to  missing values.
+When two variables have the same names between two datasets, but their types differ (string vs numerical), `append` converts the strings to missing values. Instead, the command `capappend` handles variables with conflicting types by converting both to string. 
 
 ## installation
 
