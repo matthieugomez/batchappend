@@ -1,6 +1,6 @@
 ## description
 
-When, between two datasets, two variables have differing types (string vs numerical), `append` throws an error. With the `force` option, `append` converts the strings to missing values. Instead, the command `capappend` converts the numerical variable to strings, without destroying information.
+When, between two datasets, two variables have differing types (string vs numerical), `append` throws an error. With the `force` option, `append` converts the string variables to missing values. Instead, the command `capappend` converts the numerical variable to strings, without destroying information.
 
 ## installation
 
