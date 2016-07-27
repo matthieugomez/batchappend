@@ -1,6 +1,6 @@
 v 3
 d Matthieu Gomez, Princeton University (mattg@princeton.edu)
-p capappend CAPAPPEND - append and coersce
+p batchappend BATCHAPPEND - append and coerce
 
 * l word-to-show path-or-url [description]
 * t: Directories within site:
