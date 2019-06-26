@@ -5,7 +5,7 @@ When appending a bunch of `.dta` created from .`xls`, two variables may have the
 ## installation
 
 ```
-net install batchappend , from(https://github.com/matthieugomez/stata-batchappend/raw/master/)
+net install batchappend , from("https://raw.githubusercontent.com/matthieugomez/batchappend.ado/master/")
 ```
 
 If you have a version of Stata < 13, you need to install it manually
